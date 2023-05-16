@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Thought</title>
+    <link rel="stylesheet" href="DeepThought.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Boxicons CND link -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<!-- scroll bar -->
+
+<body style="height: 100px; overflow-y: scroll;">
+    <!--header part  -->
+    <div id="navbar">
+        <div class="row" id="rowHead">
+            <div class="col-4">
+                <img src="logo.png" alt="logo">
+                <a href="#"><span id="D1">Deep</span> <span id="T2">Thought</span></a>
+            </div>
+            <div class="col-6">
+                <div id="btn-grp" aria-label="Basic example">
+                    <button type="button" class="btn"><i class="bi bi-house-fill"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-tools"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-bell-fill"></i></button>
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="profile.png" alt="profile">
+                <i class="bi bi-three-dots-vertical"></i>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <div id="header">
+            <a href="#" id="heading" class="btn disabled" role="button" aria-disabled="true">Journey Board</a>
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
+        </div id="nav_link">
+        <button id="box" role="button">1</button>
+        <ul id="nav_links">
+            <li><a id="demo" href="#" class="btn disabled">1. Demo task</a></li>
+            <li><a href="#row3">task heading 1</a></li>
+            <li><a href="#row3">task heading 2</a></li>
+            <li><a href="#row4">task heading 3</a></li>
+            <li><a href="#row4">task heading 4</a></li>
+            <li><a href="#row4">task heading 5</a></li>
+            <li><a href="#row4">task heading 6</a></li>
+            <li><a href="#row5">task heading 7</a></li>
+            <li><a href="#row5">task heading 8</a></li>
+            <li><a href="#row6">task heading 9</a></li>
+        </ul>
+    </div>
+    <!-- body  -->
+    <div class="div">
+        <div id="body">
+            <div class="row" id="row1">
+                <div class="col" id="title">You are taking challenges of New Project</div>
+            </div>
+            <div class="row" id="row2"><span>demo task</span></div>
+
+            <div class="row" id="row3">
+                <div class="col" id="col1">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Heading 1</h5>
+                            <p class=" m-2 card-text font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Consectetur laborum itaque recusandae sequi obcaecati tempore nesciunt dolor fugiat,
+                                quas iure, nostrum consequuntur dolores magnam laboriosam sunt numquam laudantium iste
+                                non. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, enim doloribus?
+                                Laudantium dolores, officiis ab nobis nulla deleniti ullam eaque consequuntur eos
+                                possimus eius, praesentium, sunt labore? Minus, nam fugit.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="col2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Task Heading 2</h5>
+                            <div id="subHeading">
+                                <button id="collapsebtn" class="text-center" type="button" data-toggle="collapse"
+                                    data-target="#expand" aria-expanded="false" aria-controls="collapseExample">
+                                    <i class="bi bi-chevron-down"></i> Thread A
+                                </button>
+                                <div class="row collapse" id="expand">
+                                    <div class=" p-0 m-0 row">
+                                        <div class="p-0 m-4 col card">
+                                            <div class="card-header">Sub Thread 1</div>
+                                            <input class="m-0 p-0 card-body" type="text" placeholder="Enter Text Here">
+                                        </div>
+                                        <div class="p-0 m-4 col card">
+                                            <div class="card-header">Sub Interpretation 1</div>
+                                            <input class="m-0 p-0 card-body" type="text" placeholder="Enter Text Here">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button class=" bi bi-lightbulb-fill"></button>
+                                            <button class="bi bi-chat-right-text-fill"></button>
+                                        </div>
+                                        <div class="col">
+                                            <div class="dropdown">
+                                                <button class="btn btn-light dropdown-toggle" type="button"
+                                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">Select Category</button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="dropdown">
+                                                <button class="btn btn-light dropdown-toggle" type="button"
+                                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">Select Process</button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-0 m-2 row">
+                                        <div class="p-0 m-4 col card" id="long">
+                                            <div class="card-header">Summary of Thread A</div>
+                                            <input class="m-0 p-0 card-body" type="text" placeholder="Enter Text Here">
+                                        </div>
+                                    </div>
+                                    <div class=" row flex-row">
+                                        <div class=" col btn btn-light ">Thread Credit <i class="bi bi-pen"></i></div>
+                                        <div class="col" id="drop">
+                                            <div class="dropdown">
+                                                <button class="btn btn-light dropdown-toggle" type="button"
+                                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">Select Emotion</button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" row btn btn-primary " id="New">+ New Thread</div>
+                                    <!-- <i class="bi bi-file-earmark-post"></i> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="row4">
+                    <div class="col" id="col3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Task Heading 3</h5>
+                                <input type="text" placeholder="Reflect as per given guidelines">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" id="col4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Task Heading 4</h5>
+                                <button id="expand2btn" type="button" onclick="show()"><i
+                                        class="bi bi-chevron-down"></i></button>
+                                <img class="collapse2" id="expand2" src="task img4.png " alt="loading info">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="row5">
+                        <div class="col" id="col5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Task Heading 7</h5>
+                                    <div class="row">
+                                        <button id="collapsebtn" class="text-center" type="button"
+                                            data-toggle="collapse" data-target="#expand3" aria-expanded="false"
+                                            aria-controls="collapseExample">
+                                            <i class="bi bi-chevron-down"></i> Introduction
+                                            <div class="collapse" id="expand3">
+                                                <input type="text" placeholder="Enter Introduction" id="Intro">
+                                            </div>
+                                    </div>
+                                    <div class="row">
+                                        <button id="collapsebtn" class="text-center" type="button"
+                                            data-toggle="collapse" data-target="#expand4" aria-expanded="false"
+                                            aria-controls="collapseExample" onclick="expand2()">
+                                            <i class="bi bi-chevron-down"></i>Thread A
+                                            <div class="collapse" id="expand4">
+                                                <div class=" m-0 p-0row">
+                                                    <div class="card col">
+                                                        <div class="card-header" id="h1">Example 1</div>
+                                                        <input class="m-0 p-0 card-body" type="text"
+                                                            placeholder="Enter text here"></input>
+                                                    </div>
+                                                    <div class="card col">
+                                                        <div class="card-header" id="h2">Arg of Thread A</div>
+                                                        <input class="m-0 p-0 card-body" type="text"
+                                                            placeholder="Enter text here"></input>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="row">
+                                        <button id="collapsebtn" class="text-center" type="button"
+                                            data-toggle="collapse" data-target="#expand5" aria-expanded="false"
+                                            aria-controls="collapseExample">
+                                            <i class="bi bi-chevron-down"></i> Conclusion
+                                            <div class="collapse" id="expand5">
+                                                <input type="text" placeholder="Enter Conclusion" id="Conclusion">
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col" id="col6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Task Heading 8</h5>
+                                    <div class="player">
+                                        <audio controls>
+                                            <source src="music.mp3" type="audio/mp3">
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="row6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class=" m-0 card-title">Task Heading 9</h5>
+                                <iframe id="video" width="530" height="315"
+                                    src="https://www.youtube.com/embed/s8H0Sx7jy7c" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="DeepThought.js"></script>
+</body>
+
+</html>
